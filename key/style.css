@@ -1,0 +1,18 @@
+body {
+  background-color: #ffffcc; /* yellow-ish background color */
+  font-family: Arial, sans-serif;
+}
+
+.livestream-content {
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  background-color: #fff; /* white background for content */
+  border: 2px solid #ffcc00; /* yellow-ish border color */
+  border-radius: 10px;
+  color: #666; /* dark gray text color */
+}
+
+.livestream-content p {
+  font-size: 1.2em;
+}
