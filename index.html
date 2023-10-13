@@ -9,12 +9,21 @@
 <body>
   <div class="livestream-content">
     <p>You will need to enter the live stream key in order to view your school's livestream.</p>
-    <form action="/key" method="GET">
+    <form id="streamKeyForm">
       <label for="streamKey">Enter your stream key:</label>
       <input type="text" id="streamKey" name="key" required>
       <br>
       <input type="submit" value="Submit">
     </form>
   </div>
+
+  <script>
+    document.getElementById('streamKeyForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const streamKey = document.getElementById('streamKey').value;
+      window.location.href = `/key/${streamKey}`; // Redirect to the desired URL
+    });
+  </script>
 </body>
 </html>
