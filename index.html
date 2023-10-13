@@ -9,6 +9,12 @@
 <body>
   <div class="livestream-content">
     <p>You will need to enter the live stream key in order to view your school's livestream.</p>
+    <form action="/key" method="GET">
+      <label for="streamKey">Enter your stream key:</label>
+      <input type="text" id="streamKey" name="key" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
   </div>
 </body>
 </html>
